@@ -6,14 +6,14 @@
   <title>International Reach | Supply Chain & Procurement Consulting</title>
   <style>
     :root {
-      --bg: #050816;
-      --bg-alt: #020617;
-      --text: #e5e7eb;
-      --muted: #9ca3af;
-      --accent: #38bdf8;
-      --accent-soft: rgba(56, 189, 248, 0.15);
-      --card: #020617;
-      --border: #1f2937;
+      --bg: #ffffff;
+      --bg-alt: #f2f6fc;
+      --text: #1e3a5f;
+      --muted: #4a5b74;
+      --accent: #2ea3f2;
+      --accent-soft: rgba(46,163,242,0.18);
+      --card: #ffffff;
+      --border: #d6dde8;
     }
 
     * {
@@ -24,8 +24,8 @@
     }
 
     body {
-      background: radial-gradient(circle at top, #1f2937 0, #020617 45%, #000 100%);
-      color: var(--text);
+      background: linear-gradient(to bottom, #ffffff 0%, #f4f7fb 40%, #e8edf3 100%);
+      color: #1e3a5f;
       line-height: 1.6;
     }
 
@@ -40,12 +40,7 @@
       width: auto;
       display: block;
     }
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      backdrop-filter: blur(16px);
-      background: rgba(2, 6, 23, 0.95);
+    header { position: sticky; top:0; z-index:10; backdrop-filter:blur(16px); background:#ffffffcc; border-bottom:1px solid #dde3ec;
       border-bottom: 1px solid rgba(15, 23, 42, 0.9);
     }
 
@@ -124,7 +119,7 @@
     }
 
     .nav-links a:hover {
-      color: var(--text);
+      color: #1e3a5f;
     }
 
     .nav-links a:hover::after {
@@ -158,7 +153,7 @@
     }
 
     .btn-outline:hover {
-      color: var(--text);
+      color: #1e3a5f;
       border-color: rgba(148, 163, 184, 0.9);
       background: rgba(15, 23, 42, 1);
     }
@@ -213,11 +208,20 @@
     .pill {
       padding: 0.18rem 0.7rem;
       border-radius: 999px;
-      border: 1px solid rgba(51, 65, 85, 0.9);
-      background: rgba(15, 23, 42, 0.9);
-      color: var(--muted);
+      border: 1px solid #a8c7e6;
+      background: #d9ecff;
+      color: #0a2a4f;
       font-size: 0.75rem;
       white-space: nowrap;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+      transition: all 0.25s ease;
+    }
+
+    .pill:hover {
+      background: #cfe5ff;
+      border-color: #7fb4e5;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transform: translateY(-2px);
     }
 
     .hero-actions {
@@ -236,7 +240,7 @@
     }
 
     .hero-meta strong {
-      color: var(--text);
+      color: #1e3a5f;
     }
 
     .hero-aside {
@@ -270,9 +274,12 @@
     }
 
     .cred-strip {
-      margin: 2rem 0 2.2rem;
+      margin: 3rem 0 2.4rem;
       text-align: center;
-      opacity: 0.95;
+      background: var(--bg-alt);
+      border-radius: 0.9rem;
+      padding: 1.9rem 1.4rem;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
     }
 
     .cred-label {
@@ -289,7 +296,7 @@
       justify-content: center;
       gap: 1.2rem;
       font-size: 0.9rem;
-      color: var(--text);
+      color: #1e3a5f;
       opacity: 0.9;
     }
 
@@ -345,10 +352,11 @@
     .card {
       padding: 1.2rem 1.1rem;
       border-radius: 1rem;
-      background: radial-gradient(circle at top, #020617 0, #020617 40%, #000 100%);
-      border: 1px solid var(--border);
-      box-shadow: 0 14px 26px rgba(15, 23, 42, 0.75);
-      font-size: 0.88rem;
+      background: #f7faff;
+      border: 1px solid #cbd9ea;
+      box-shadow: 0 8px 20px rgba(30, 58, 95, 0.12);
+      font-size: 0.9rem;
+      color: #1e3a5f;
     }
 
     .card h3 {
@@ -432,7 +440,7 @@
       border-radius: 0.55rem;
       border: 1px solid rgba(55, 65, 81, 0.9);
       background: rgba(15, 23, 42, 0.95);
-      color: var(--text);
+      color: #1e3a5f;
       font-size: 0.85rem;
     }
 
@@ -628,7 +636,18 @@
       </div>
     </section>
 
-    <!-- CREDIBILITY STRIP / SECTORS -->
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="section-label">About</div>
+      <h2 class="section-title">Improving supply chains to support growth</h2>
+      <p class="section-intro">
+        We began in 2025 with a mission to improve supply chains and support growth.
+        International Reach brings together senior procurement and operations leaders
+        who have led transformations across automotive, med-tech, life sciences, diagnostics,
+        aerospace, mobility and technology.
+      </p>
+    </section>
+
     <section class="cred-strip">
       <div class="cred-label">Experience Across Global Supply Chains</div>
       <div class="cred-row">
@@ -702,18 +721,6 @@
       </div>
     </section>
 
-    <!-- ABOUT -->
-    <section id="about">
-      <div class="section-label">About</div>
-      <h2 class="section-title">Improving supply chains to support growth</h2>
-      <p class="section-intro">
-        We began in 2025 with a mission to improve supply chains and support growth.
-        International Reach brings together senior procurement and operations leaders
-        who have led transformations across automotive, med-tech, life sciences, diagnostics,
-        aerospace, mobility and technology.
-      </p>
-    </section>
-
     <!-- OUR EXPERTISE -->
     <section id="expertise">
       <div class="section-label">Our Expertise</div>
@@ -760,89 +767,30 @@
         supply chain solutions that drive measurable business results.
       </p>
 
-      <div class="grid grid-3">
-        <div class="card">
-          <h3>Risk Management Solutions</h3>
-          <p>
-            Comprehensive TPRM (Third-Party Risk Management) and sub-tier mapping to
-            identify, assess, and mitigate supply chain risks across all vendor relationships.
-          </p>
-          <ul>
-            <li>Third-Party Risk Assessment</li>
-            <li>Sub-Tier Mapping</li>
-            <li>Compliance Monitoring</li>
-            <li>Risk Mitigation Strategies</li>
-          </ul>
+      <div class="services-scroll" style="display:flex; gap:1rem; flex-wrap:nowrap; overflow-x:auto; padding:0.6rem 0;">
+        <div class="card expertise-card" style="flex:0 0 auto; width:220px; text-align:center; padding:1rem;">
+          <h3>Baseline Identification</h3>
+          <p style="font-size:0.85rem; color:var(--muted);">Full visibility into spend, suppliers, and risks.</p>
         </div>
-
-        <div class="card">
-          <h3>Cost Optimization</h3>
-          <p>
-            Strategic cost reduction through should-costing, clean-sheeting analysis,
-            and negotiation execution across direct and indirect spend.
-          </p>
-          <ul>
-            <li>Should-Costing Analysis</li>
-            <li>Clean-Sheeting</li>
-            <li>Spend Analytics</li>
-            <li>Contract Negotiation</li>
-          </ul>
+        <div class="card expertise-card" style="flex:0 0 auto; width:220px; text-align:center; padding:1rem;">
+          <h3>Ideation & Leverage Creation</h3>
+          <p style="font-size:0.85rem; color:var(--muted);">Unlock opportunities and strategic negotiation levers.</p>
         </div>
-
-        <div class="card">
-          <h3>KPI Management & Dashboards</h3>
-          <p>
-            Real-time visibility into supply chain performance with customised dashboards
-            and KPI tracking for informed decision-making.
-          </p>
-          <ul>
-            <li>Custom Dashboards</li>
-            <li>Performance Metrics</li>
-            <li>Real-time Monitoring</li>
-            <li>Executive Reporting</li>
-          </ul>
+        <div class="card expertise-card" style="flex:0 0 auto; width:220px; text-align:center; padding:1rem;">
+          <h3>Negotiation Alignment & Execution</h3>
+          <p style="font-size:0.85rem; color:var(--muted);">Structured preparation and confident deal execution.</p>
         </div>
-
-        <div class="card">
-          <h3>Supply Chain Mapping</h3>
-          <p>
-            End-to-end supply chain visibility with detailed supplier network analysis
-            and capability assessment across all tiers.
-          </p>
-          <ul>
-            <li>Network Visualisation</li>
-            <li>Capability Assessment</li>
-            <li>Supplier Profiles</li>
-            <li>Dependency Analysis</li>
-          </ul>
+        <div class="card expertise-card" style="flex:0 0 auto; width:220px; text-align:center; padding:1rem;">
+          <h3>Due Diligence Support</h3>
+          <p style="font-size:0.85rem; color:var(--muted);">Deep analysis for M&A, supplier assessments and synergies.</p>
         </div>
-
-        <div class="card">
-          <h3>Negotiation Strategies</h3>
-          <p>
-            Advanced negotiation frameworks and execution support to maximise value
-            and minimise risk in supplier relationships.
-          </p>
-          <ul>
-            <li>Strategy Development</li>
-            <li>Negotiation Support</li>
-            <li>Contract Optimisation</li>
-            <li>Relationship Management</li>
-          </ul>
+        <div class="card expertise-card" style="flex:0 0 auto; width:220px; text-align:center; padding:1rem;">
+          <h3>Contract Amendments</h3>
+          <p style="font-size:0.85rem; color:var(--muted);">Strengthen terms, improve protection and reduce risk.</p>
         </div>
-
-        <div class="card">
-          <h3>Supplier Relationship Management</h3>
-          <p>
-            Comprehensive SRM programs including capability matrices, performance
-            evaluation, and strategic partnership development.
-          </p>
-          <ul>
-            <li>Capability Matrices</li>
-            <li>Performance Scorecards</li>
-            <li>Strategic Partnerships</li>
-            <li>Continuous Improvement</li>
-          </ul>
+        <div class="card expertise-card" style="flex:0 0 auto; width:240px; text-align:center; padding:1rem;">
+          <h3>Full Data Analysis for Risk Mitigation</h3>
+          <p style="font-size:0.85rem; color:var(--muted);">Data-backed insights to prevent disruptions and strengthen supply chain resilience.</p>
         </div>
       </div>
     </section>
@@ -1071,24 +1019,36 @@
         </div>
       </div>
 
-      <div class="card" style="margin-top:1.2rem; position:relative; padding-top:2.2rem;">
+      <div class="card" style="margin-top:1.2rem; position:relative; padding:2rem 1.4rem;">
         <div style="position:absolute; top:0.4rem; left:0.8rem; font-size:3rem; line-height:1; color:var(--accent-soft);">“</div>
         <div style="position:absolute; bottom:0.4rem; right:0.8rem; font-size:3rem; line-height:1; color:var(--accent-soft);">”</div>
 
-        
-
-        <!-- Desktop Full Testimonial -->
-        <div class="testimonial-desktop">
-          <p style="font-size:0.9rem; color:var(--text); margin-bottom:1rem; line-height:1.55;">
-            As the Vice President of Supply Chain at Bioventus, a $600 million surgical solutions company, I had the opportunity 
-            to engage Shardul Shah, founder of International Reach, to lead a critical project focused on transforming our indirect 
-            procurement function—with a clear mandate to deliver both savings and cash flow improvements.
+        <p style="font-size:0.9rem; color:var(--text); line-height:1.6; margin-bottom:1.2rem;">
+           As the Vice President of Supply Chain at Bioventus, a $600 million surgical solutions company, I had the opportunity to engage
+            Shardul Shah, founder of International Reach, to lead a critical project focused on transforming our indirect procurement
+            function—with a clear mandate to deliver both savings and cash flow improvements.
             <br><br>
-            Shardul brought more than just strategic insight—he brought structure, analytics, and hands-on leadership that elevated 
-            our internal capabilities and helped reposition procurement as a value-generating function across the company. His impact 
-            was immediate and deeply felt in several areas:
-          </p>
-          <ul style="color:var(--muted); font-size:0.85rem; padding-left:1.2rem; line-height:1.55; margin-bottom:1rem;">
-            <li><strong style="color:var(--text);">Spend Analytics & Data-Driven Insights:</strong> Led the development of a comprehensive spend cube, creating alignment across finance, operations, and procurement.</li>
-            <li><strong style="color:var(--text);">Workstream Management:</strong> Structured the effort into distinct and manageable workstreams with measurable KPIs.</li>
-            <li><strong style="color:var(--text);"
+            Shardul brought more than just strategic insight—he brought structure, analytics, and hands-on leadership that elevated our internal
+            capabilities and helped reposition procurement as a value-generating function across the company. His impact was immediate and deeply
+            felt in several areas:
+            <br><br>
+            <ul style="padding-left:1.2rem; margin-bottom:1rem;">
+              <li><strong>Spend Analytics & Data-Driven Insights:</strong> Led the development of a comprehensive spend cube, creating alignment across finance, operations, and procurement.</li>
+              <li><strong>Workstream Management:</strong> Structured the effort into distinct and manageable workstreams with measurable KPIs.</li>
+              <li><strong>Capability Building:</strong> Provided hands-on coaching and frameworks to support and strengthen the leadership of our new Director of Procurement.</li>
+              <li><strong>Cash Flow & Cost Impact:</strong> Successfully unlocked cost savings and immediate improvements in cash flow.</li>
+              <li><strong>Organisational Credibility:</strong> Elevated the procurement function from transactional to strategic, with recognition during our all-employee town hall.</li>
+            </ul>
+            Shardul is a rare blend of strategist, operator, and coach. I would absolutely work with him again and strongly recommend him to any
+            company looking to accelerate procurement performance and organizational credibility
+        </p>
+ </div>
+        <div style="position:absolute; bottom:0.4rem; right:0.8rem; font-size:3rem; line-height:1; color:var(--accent-soft);">”</div>
+
+        <div style="text-align:right; margin-top:1rem; line-height:1.4;">
+          <div style="font-weight:600; color:var(--text); font-size:1rem;">Chris Burcky</div>
+          <div style="color:var(--accent); font-size:0.9rem;">Vice President of Supply Chain</div>
+          <div style="color:var(--accent); font-size:0.9rem;">Bioventus</div>
+          <div style="color:var(--muted); font-size:0.8rem;">$600M Surgical Solutions Company (Nasdaq: BVS)</div>
+        </div>
+     
